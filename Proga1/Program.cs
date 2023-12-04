@@ -7,6 +7,8 @@
 [“1234”, “1567”, “-2”, “computer science”] → [“-2”]
 [“Russia”, “Denmark”, “Kazan”] → []*/
 
+using System.Runtime.InteropServices;
+
 void ArraySecond(string[] array1, string[] array2)
 {
     int y = 0;
@@ -21,10 +23,10 @@ void ArraySecond(string[] array1, string[] array2)
 }
 void PrintArray(string message, string[] array)
 {
-    Console.WriteLine(message);
+    Console.Write(message);
     for (int i = 0; i < array.Length; i++)
     {
-        Console.Write($"{array[i]} ");
+        Console.Write($" {array[i]} ");
     }
     Console.WriteLine();
 }
@@ -33,6 +35,6 @@ string[] array1 = new string[7] { "Hello", "2", "1234", "world", ":-)", "03", "R
 string[] array2 = new string[array1.Length];
 
 ArraySecond(array1, array2);
-
-PrintArray("Исходный массив : ", array1);
+Console.Clear();
+PrintArray("Исходный массив     :", array1);
 PrintArray("Получившийся массив :", array2);
