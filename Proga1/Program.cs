@@ -2,7 +2,7 @@
  длина которых меньше, либо равна 3 символам. Первоначальный массив можно ввести с клавиатуры, 
  либо задать на старте выполнения алгоритма.*/
 
-using System.Runtime.InteropServices;
+
 
 void ArraySecond(string[] array1, string[] array2)
 {
